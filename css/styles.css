@@ -41,19 +41,16 @@ body{
     line-height: 1.3;;
 }
 
-.phone_nav{
-    visibility: hidden;
-}
-
 
 /* Navagation Bar */
+
 
 .navbar{
     z-index: 2;
     display:flex;
+    position:fixed;
     align-items: center;
     justify-content: space-between;
-    position:fixed;
     width:100%;
     height: auto;
     background-color:var(--transparent_background);
@@ -365,12 +362,16 @@ input[type=submit]:hover{
 
 /* Hides the overlay while nav bar is present */
 @media screen and (min-width:1300px){
-    .fa
-    {
+    .fa{
         opacity:0;
         visibility: hidden;
     }
-    
+}
+
+@media screen and (min-width:1200px){
+    .home{
+        padding:0 150px 0 150px;
+    }
 }
 
 /* Hidden Overlay */
@@ -387,7 +388,7 @@ figure it out myself */
     background-color: transparent;
     color:var(--blue);
     position:relative;
-    right:1%;
+    right:2%;
     opacity:1;
 }
 
@@ -395,7 +396,7 @@ figure it out myself */
     height: 100%;
     width: 0;
     position: fixed; 
-    z-index: 5; 
+    z-index: 10; 
     right: 0;
     top: 0;
     background-color: var(--less_transparent_background);
