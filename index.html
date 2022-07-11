@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joseph Picardat</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  <header>
+
+    <!--Navigation Bar-->
+    <nav class="navbar" id="navbar">
+        <a href="#home">
+          <img class="logo" src="./photos/JP Logo.png"></img>
+        </a>
+
+        <ul class="nav">
+          <il><a href="#about-me"> <span class="nav_numbers">01. </span>About Me</a></il>
+          <il><a href="#work"> <span class="nav_numbers">02. </span>Work</a></il>
+          <il><a href="#contact"> <span class="nav_numbers">03. </span>Contact</a></il>
+          <il><a href="https://previews.123rf.com/images/pockygallery/pockygallery1504/pockygallery150400844/39168371-nope-red-stamp-text-on-white.jpg"> <span class="nav_numbers">04. </span>Resume</a></il>
+        </ul>
+
+        <i class="fa fa-bars fa-3x" onclick="openNav()"></i>
+
+    </nav>
+
+
+<section>
+<!-- Tablet/Phone Navigation Bar (THIS CODE IS FROM W3Schools and is not original, everthing else is original unless mentioned otherwised) -->
+<div class="phone_nav">
+
+  <div class="overlay" id="overlayNav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="overlay-content">
+      <il class="ov"><a href="#about-me" onclick="closeNav()"> <span class="nav_numbers">01. </span>About Me</a></il>
+      <il class="ov"><a href="#work" onclick="closeNav()"> <span class="nav_numbers">02. </span>Work</a></il>
+      <il class="ov"><a href="#contact" onclick="closeNav()"> <span class="nav_numbers">03. </span>Contact</a></il>
+      <il class="ov"><a href="https://previews.123rf.com/images/pockygallery/pockygallery1504/pockygallery150400844/39168371-nope-red-stamp-text-on-white.jpg"> <span class="nav_numbers">04. </span>Resume</a></il>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+  </header>
+
+  <section class="home" id="home">
+
+    <!--Title plus intro-->
+    <div class="page-title">
+  
+      <div class="column_one this-title">
+        <h1 id="hi">Hi! I'm </h1> <br>
+        <br>
+        <h1 id="joseph"> Joseph,</h1>
+
+        <h3 class="text">A <span id="highlight">web designer</span> in the
+          works who's ready to take on any challenge you hit me with. 
+          I am taking a <span id="highlight">Coding Bootcamp</span> 
+          under the <span id="ut">University of Texas</span> banner
+          and will graduate from the course in December 2022.
+          This site is where all of my work is documented, feel
+          free to look around!
+        </h3>
+      </div>
+
+      <div class="column_two turtle">
+
+        <img id="turtle" src="./photos/Turtle.png"></img>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sections about-me" id="about-me">
+
+    <h2 class="header_sections"><span class="num">0.1 </span>About Me</h2>
+
+    <div class="column_one">
+    <h3 class="text-sections">Hi my name is Joseph Picardat and I enjoy adventure such as scuba diving and the creativity 
+      that programming gives me. Over the years I have been acquainted with many different 
+      genres of academics in my college career including engineering, computer science, and 
+      music performance. I am an Eagle Scout and love the outdoors and will take charge in 
+      any situation as needed. 
+    </h3>
+
+    <h3 class="text-sections">
+      I have experience in a few programing languages including: Python, MatLab, C++, HTML, 
+      CSS, and Javascript. I am not only acquainted with full-stack development, 
+      but have years of experience with SolidWorks, 3D printer software, and VCarve Pro. 
+      This includes the understanding and use of CNC machines, 3D printers, and laser cutters as well.
+    </h3>
+    </div>
+
+    <div class="column_two">
+      <img id="profile" src="./photos/profile_picture.jpeg"></img>
+    </div> 
+
+    <div div_mountains>
+      <img id="mountains" src="./photos/mountains.png"></img>
+    </div>
+
+  </section>
+
+  <section class="sections work" id="work">
+
+    <h2 class="header_sections header_work"><span class="num">0.2 </span>Work</h2>
+    
+    <div class="work_photos">
+
+      <h3 class="work_title">CSS Snippet cheatsheet</h3>
+      <a href="https://josephpicardat.github.io/CSS-Snippet-Cheatsheet/" target="_blank"><img class="photos" src="./photos/CSS-Snippet-Cheatsheet.png"></img></a>
+
+    </div>
+
+    
+    <div class="work_photos small">
+
+      <h3 class="work_title">Online management Company</h3>
+      <a href="https://josephpicardat.github.io/Online-Management-Company/" target="_blank"><img class="photos" src="./photos/Online-Management-Company.png"></img></a>
+
+    </div>
+
+    <div class="work_photos small">
+
+      <h3 class="work_title photography">Wedding Photography</h3>
+      <a href="https://josephpicardat.github.io/css-html-challenge/" target="_blank"><img class="photos" src="./photos/Capture-Your-Dream.png"></img></a>
+
+    </div>
+
+  </section>
+
+  <scetion class="sections contact" id="contact">
+
+    <h2 class="header_sections header_work"><span class="num">0.3 </span>Contact</h2>
+
+    <div class="form">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+          <label for="request">Request</label>
+          <textarea id="request" name="requst" placeholder="Write something.." style="height:170px"></textarea>
+        </form>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><input type="submit" value="submit"></a>
+    </div>
+
+    <div class="socials">
+
+      <a href="https://github.com/josephpicardat?tab=repositories" target="_blank"><img class="sphotos" src="./photos/github.png"></img></a>
+
+    </div>
+
+  </scetion>
+
+  <footer>
+    <h3 class="footer">Designed and built by <span> <img class="footer_turtle" src="./photos/Turtle.png"></image></span>
+    </span> Joseph Picardat</h3>
+  </footer>
+
+  <script src="./javascript/script.js"></script>
+
+</body>
+
+</html>

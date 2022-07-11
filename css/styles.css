@@ -1,0 +1,468 @@
+/* 
+
+Table of Contents
+
+Copy and paste the words before the ":" to jump to those sections in the search function (comand+f/ctr+f).
+
+Basic: lines 6-29
+Navigation Bar: lines 34-82
+Home Page: lines 85-150
+About Me section: lines 152-191
+Work section: lines 192-235
+Contact Section: lines 236-277
+Hidden Overlay: 
+Footer: lines 286-297
+*/
+
+/* Basic */
+:root{
+    --blue:#05fdf8;
+    --green:#11ffa8;
+    --gradient:-webkit-linear-gradient(45deg,#05fdf8,#11ffa8);
+    --ut_gradient:-webkit-linear-gradient(#cbb5a5,#CC5500);
+    --off_white:#dcfbfa;
+    --darker_off_white:#c8e5e4;
+    --background:#1f252f;
+    --grey_shadow:rgba(52, 61, 78, 0.7);
+    --lighter_background:#262d3a;
+    --transparent_background:rgba(46, 55, 69, 0.75);
+    --less_transparent_background:rgba(46, 55, 69, .97);
+}
+
+*{
+    font-family:'Times New Roman', Times, serif;
+    background-color:var(--background);
+}
+
+body{
+    margin: 0px;
+    width:100%;
+    min-height: 100%;
+    line-height: 1.3;;
+}
+
+.phone_nav{
+    visibility: hidden;
+}
+
+
+/* Navagation Bar */
+
+.navbar{
+    z-index: 2;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position:fixed;
+    width:100%;
+    height: auto;
+    background-color:var(--transparent_background);
+    backdrop-filter: blur(5px);
+    box-shadow:0 10px 15px var(--transparent_background);
+    transition: top 0.3s;
+}
+
+.navbar a, .navbar ul a, .logo, .nav il, .nav_numbers, .nav{
+    background-color:transparent;
+}
+
+.logo{
+    max-width: 70px;
+    position: relative;
+}
+
+.nav{
+    font-size: 20px;
+    position:absolute;
+    text-align: end;
+    top:40%;
+    right:0%;
+    margin-right:15px;
+}   
+
+.nav il{
+    padding:10px;
+    color:var(--off_white);
+    text-decoration: none;
+}
+
+.nav a:visited, a:active, a:link{
+    color:var(--off_white);
+    text-decoration: none;
+}
+
+.nav_numbers{
+    color:var(--green);
+    padding-right: 3px;
+}
+
+.nav a:hover{
+    color:var(--green);
+}
+
+/* Home Page */
+
+.home{
+    display:flex;
+    flex-wrap: wrap;
+    padding:0 12.5% 0 12.5%;
+    margin:0% 12.5% 0% 12.5%;
+    min-height:100vh;
+}
+
+.sections{
+    display:flex;
+    flex-wrap: wrap;
+    padding:0 12.5% 0 12.5%;
+    margin:100px 12.5% 300px 12.5%;
+}
+
+
+.page-title{
+    height:auto;
+    padding-top:150px;
+    text-align: left;
+    color:var(--off_white)
+}
+
+/* sets the columns up */
+.column_one{
+    margin-bottom: 50px;
+    float: left;
+    width: 70%;
+}
+
+.column_two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:left;
+    width: 30%;
+}
+  
+/* Clear floats after the columns */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#hi{
+    font-size: 75px;
+}
+
+#joseph{
+    font-size: 75px;
+    margin-top:-20px;
+    background:var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+.text{
+    font-size: 24px;
+    padding-top: 50px;
+    padding-right:0;
+    color:var(--darker_off_white);
+}
+
+#highlight{
+    background:var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+#ut{
+    background:var(--ut_gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+#turtle{
+    max-width:400px;
+    background-color: transparent;
+}
+
+
+/* About Me Section */
+
+#profile{
+    max-width:305px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.num{
+    color:var(--green);
+}
+
+.header_sections{
+    width:100%;
+    font-size: 35px;
+    margin-top:50px;
+    margin-bottom:50px;
+    max-height:40px;
+    color:var(--off_white);
+}
+
+.text-sections{
+    font-size: 24px;
+    color:var(--darker_off_white);
+    margin:50px 25% 0px 5%;
+}
+
+.div_mountains{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mountains{
+    max-width:506px;
+    background-color: transparent;
+    margin-top:30px;
+}
+
+/* Work Section */
+
+.work{
+    display:flex;
+    justify-items: center;  
+    align-items: center;
+}
+
+.header_work{
+    margin-bottom:0;
+}
+
+.work_title{
+    font-size: 24px;
+    margin:10px 0 10px 0;
+    color:var(--darker_off_white);
+    width:100%;
+    text-align: center;
+}
+
+.work_photos{
+    font-size:24px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.photos{
+    max-width:100%;
+    border:solid 15px var(--lighter_background);
+    filter:grayscale(20%);
+}
+
+.photos:hover{
+    border:solid 15px var(--blue);
+    filter:none;
+}
+
+.small{
+    width:50%;
+}
+
+/*Contact Section*/
+
+.contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-color: #85907e;
+    box-sizing: border-box;
+}
+
+.form{
+    margin-top: 100px;
+}
+
+label{
+    color:var(--off_white);
+}
+
+::placeholder{
+    color:var(--blue);
+}
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--darker_off_white);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color:var(--blue);
+}
+  
+input[type=submit]{
+    background-color: var(--blue);
+    color: var(--lighter_background);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover{
+    background-color:var(--green);
+}
+  
+.socials{
+    margin-top: 50px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sphotos{
+    width:100%;
+    background-color: var(--green);
+    border-radius: 35%;
+}
+
+
+@media screen and (max-width:1174px){
+    .photography{
+        margin:25px 0 25px 0;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .photography{
+        margin:10px 0 10px 0;
+    }
+    .column_one, .column_two{
+        width:100%
+    }
+    .sections{
+        margin-left:0;
+        margin-right: 0;
+    }
+    .home{
+        margin-left:0;
+        margin-right: 0;
+    }
+    .text-sections{
+        margin-right: 0;
+    }
+    .small{
+        width:100%
+    }
+    .phone_nav{
+        display:flex;
+    }
+    .nav{
+        display:none;
+    }
+}
+  
+
+/* Hides the overlay while nav bar is present */
+@media screen and (min-width:1300px){
+    .fa
+    {
+        opacity:0;
+        visibility: hidden;
+    }
+    
+}
+
+/* Hidden Overlay */
+/* NOTE!! The following code is mostly from w3schools on 
+fullscreen overlay I did not have enough time to 
+figure it out myself */
+
+.phone_nav{
+    justify-content: flex-end;
+}
+
+
+.fa{
+    background-color: transparent;
+    color:var(--blue);
+    position:relative;
+    right:1%;
+    opacity:1;
+}
+
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 5; 
+    right: 0;
+    top: 0;
+    background-color: var(--less_transparent_background);
+    overflow-x: hidden; 
+    transition: 0.5s; 
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px; 
+    background-color: transparent;
+    display:block;
+    justify-content: start;
+    align-items: center;
+}
+
+.overlay a{
+    margin-top:15px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: var(--off_white);
+    display: block; 
+    transition: 0.3s; 
+    background-color:transparent;
+}
+  
+.ov{
+    width:100%;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: var(--green);
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    background-color: transparent;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+}
+
+/* Footer (original code*/
+
+.footer{
+    margin-top: 50px;;
+    text-align: center;
+    font-size: 50px;
+    color:var(--off_white);
+}
+
+.footer_turtle{
+    max-width:80px;
+    max-height: 80px;
+    position:relative;
+    top:25px;
+}
