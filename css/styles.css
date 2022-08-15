@@ -261,6 +261,15 @@ body{
 
 .small{
     width:50%;
+    display:flex;
+    align-items: start;
+}
+
+.bottom {
+    display: relative;
+    min-height:201.85px;
+    height: 1em;
+
 }
 
 /*Contact Section*/
@@ -349,7 +358,12 @@ input[type=submit]:hover{
         margin-right: 0;
     }
     .small{
-        width:100%
+        width:100%;
+        height:auto !important;
+    }
+    .bottom{
+        width:100%;
+        height:auto; 
     }
     .phone_nav{
         display:flex;
