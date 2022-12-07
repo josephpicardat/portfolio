@@ -24,14 +24,17 @@ Footer: lines 286-297
     --darker_off_white:#c8e5e4;
     --background:#1f252f;
     --grey_shadow:rgba(52, 61, 78, 0.7);
-    --lighter_background:#262d3a;
+    --lighter_background:#394053;
     --transparent_background:rgba(46, 55, 69, 0.75);
     --less_transparent_background:rgba(46, 55, 69, .97);
 }
 
+/* #394053 */
+
 *{
     font-family:'Times New Roman', Times, serif;
     background-color:var(--background);
+    color: var(--off_white);
 }
 
 body{
